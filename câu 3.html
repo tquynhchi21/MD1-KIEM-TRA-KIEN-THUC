@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let myArray = ['1', '2', '1', '2', '3', '4', '4', '3', '5', '5', '6', '7']
+    let myArrayWithNoDuplicates = myArray.reduce(function (accumulator, element) {
+        if (accumulator.indexOf(element) === -1) {
+            accumulator.push(element)
+        }
+        return accumulator
+    }, [])
+
+    console.log(myArrayWithNoDuplicates)
+</script>
+
+</body>
+</html>
